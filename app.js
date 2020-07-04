@@ -18,6 +18,7 @@ function LunchCheckController($scope) {
 
   $scope.addItem = "";
   $scope.helpText="";
+  $scope.msgText ="";
   $scope.addMe = function () {
     setColor('#B5555A');
        $scope.msgText = "Please enter Data first";
@@ -32,7 +33,7 @@ function LunchCheckController($scope) {
                         count++;
                     }
                 }
-
+              
                   $scope.helpText=count<nameCount?"I don't consider an empty Item":" ";
                   setColor('#398439');
                   $scope.msgText= count >3? "Too much!":"Enjoy!!";

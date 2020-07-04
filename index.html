@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="LunchCheck">
   <head>
     <title>Lunch Checker</title>
 
@@ -11,7 +11,7 @@
     <script src="angular.min.js"></script>
     <script src="app.js"></script>
   </head>
-<body ng-app="LunchCheck" >
+<body>
    <div class="container" ng-controller="LunchCheckController">
      <h1>Lunch Checker</h1>
          <div class="form-group">
@@ -22,9 +22,7 @@
          </div>
          <div class="form-group">
             <button class="btn btn-default" ng-click="addMe()">Check If Too Much</button>
-          <br>
-
-         </div>
+        </div>
 
          <div class="form-group message" ng-style="mesageStyle">
             {{msgText}}
